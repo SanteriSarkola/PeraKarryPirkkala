@@ -12,7 +12,17 @@
       background: #f5f5f5;
       color: #222;
     }
-    header, footer {
+    header {
+      background: #0056b3;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: bold;
+    }
+    footer {
       background: #333;
       color: white;
       padding: 1rem;
@@ -25,7 +35,7 @@
       background: white;
     }
     h1, h2 {
-      color: #444;
+      color: #333;
     }
     .kuva {
       width: 100%;
@@ -49,6 +59,12 @@
       border: none;
       cursor: pointer;
     }
+    .huom {
+      font-style: italic;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+      color: #555;
+    }
   </style>
 </head>
 <body>
@@ -56,7 +72,7 @@
     <h1>Peräkärryn vuokraus Pirkkalassa</h1>
   </header>
   <main>
-    <img src="kuva1.jpg" alt="Peräkärry" class="kuva" />
+    <img src="kuva1.JPG" alt="Peräkärry" class="kuva" />
 
     <h2>Tiedot</h2>
     <p><strong>Muuli 900K</strong> – kestävä ja tilava peräkärry. Soveltuu mm. huonekalu- ja rakennustarvikekuljetuksiin.</p>
@@ -66,6 +82,7 @@
       <li>Valoliitin: 7-napainen</li>
       <li>Adapteri 13-napaiselle saatavilla (5 €)</li>
     </ul>
+    <p class="huom">Tarkempi nouto-osoite toimitetaan vuokrauksen jälkeen asiakkaan sähköpostiin.</p>
 
     <h2>Hinnasto</h2>
     <ul>
@@ -88,6 +105,20 @@
       <input type="email" name="Sähköposti" placeholder="Sähköposti" required>
       <input type="tel" name="Puhelin" placeholder="Puhelinnumero" required>
       <textarea name="Viesti" rows="5" placeholder="Toivottu vuokrausaika ja lisätiedot" required></textarea>
+      <input type="hidden" name="_autoresponse" value="Kiitos varauksestasi ja tervetuloa peräkärryn käyttäjäksi!
+
+Peräkärry on noudettavissa osoitteesta:
+Nuijamiehentie 13, Pirkkala.
+
+Kärryn avain löytyy peräkärryn vasemmalla kyljellä olevasta Masterlock-avainsuojasta. Avauksen koodi on: 2000.
+
+⚠️ Huomioithan, että vuokraaja vastaa mahdollisista käytön aikana syntyvistä vahingoista, kuten esimerkiksi renkaan puhkeamisesta tai muista vaurioista.
+
+Tarvittaessa voit ottaa yhteyttä:
+📞 +358 45 2345 988
+📧 santerisarkola00@gmail.com
+
+Mukavaa ajoa ja turvallista matkaa!">
       <button type="submit">Lähetä varauspyyntö</button>
     </form>
 
@@ -95,7 +126,10 @@
     <p>MobilePay, käteinen tai lasku</p>
 
     <h2>Lisäkuva</h2>
-    <img src="kuva2.jpg" alt="Peräkärry eri kulmasta" class="kuva" />
+    <img src="kuva2.JPG" alt="Peräkärry eri kulmasta" class="kuva" />
+
+    <h2>Vuokraehdot</h2>
+    <p class="huom">Vuokraaja on vastuussa mahdollisista peräkärryyn kohdistuvista vaurioista vuokrauksen aikana, kuten esimerkiksi renkaan puhkeamisesta tai muista vahingoista.</p>
   </main>
   <footer>
     <p>&copy; 2025 Peräkärryn vuokraus Pirkkalassa</p>
