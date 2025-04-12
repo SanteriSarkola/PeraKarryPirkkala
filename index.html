@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Peräkärryn vuokraus Pirkkalassa</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     body {
       font-family: sans-serif;
@@ -15,12 +16,28 @@
     header {
       background: #0056b3;
       color: white;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 1rem 1rem;
       text-align: center;
+    }
+    header img {
+      height: 60px;
+      margin-bottom: 1rem;
     }
     header h1 {
       font-size: 2.2rem;
       font-weight: bold;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 0.75rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     footer {
       background: #333;
@@ -35,7 +52,7 @@
       background: white;
     }
     h1, h2 {
-      color: #333;
+      color: #004c99;
     }
     .kuva {
       width: 100%;
@@ -59,22 +76,37 @@
       border: none;
       cursor: pointer;
     }
+    button:hover {
+      background: #0051a3;
+    }
     .huom {
       font-style: italic;
       font-size: 0.95rem;
       margin-top: 0.5rem;
       color: #555;
     }
+    .qr {
+      max-width: 200px;
+      margin: 2rem auto;
+      display: block;
+    }
   </style>
 </head>
 <body>
   <header>
+    <img src="qr_logo.png" alt="Logo">
     <h1>Peräkärryn vuokraus Pirkkalassa</h1>
+    <nav>
+      <a href="#tiedot">Tiedot</a>
+      <a href="#hinnasto">Hinnasto</a>
+      <a href="#yhteystiedot">Yhteystiedot</a>
+      <a href="#varaus">Varaus</a>
+    </nav>
   </header>
   <main>
-    <img src="kuva1.JPG" alt="Peräkärry" class="kuva" />
+    <img src="kuva1.jpg" alt="Peräkärry" class="kuva" />
 
-    <h2>Tiedot</h2>
+    <h2 id="tiedot">Tiedot</h2>
     <p><strong>Muuli 900K</strong> – kestävä ja tilava peräkärry. Soveltuu mm. huonekalu- ja rakennustarvikekuljetuksiin.</p>
     <ul>
       <li>Sisämitat: 145 cm x 320 cm</li>
@@ -84,7 +116,7 @@
     </ul>
     <p class="huom">Tarkempi nouto-osoite toimitetaan vuokrauksen jälkeen asiakkaan sähköpostiin.</p>
 
-    <h2>Hinnasto</h2>
+    <h2 id="hinnasto">Hinnasto</h2>
     <ul>
       <li>1 vrk: 30 €</li>
       <li>Viikonloppu (pe–su): 50 €</li>
@@ -95,11 +127,11 @@
     <h2>Sijainti</h2>
     <p>Pirkkala – Huovin alue</p>
 
-    <h2>Yhteystiedot</h2>
+    <h2 id="yhteystiedot">Yhteystiedot</h2>
     <p>Email: <a href="mailto:santerisarkola00@gmail.com">santerisarkola00@gmail.com</a><br>
     Puhelin: <a href="tel:+358452345988">+358 45 2345 988</a></p>
 
-    <h2>Varauslomake</h2>
+    <h2 id="varaus">Varauslomake</h2>
     <form action="https://formsubmit.co/santerisarkola00@gmail.com" method="POST">
       <input type="text" name="Nimi" placeholder="Nimi" required>
       <input type="email" name="Sähköposti" placeholder="Sähköposti" required>
@@ -126,7 +158,11 @@ Mukavaa ajoa ja turvallista matkaa!">
     <p>MobilePay, käteinen tai lasku</p>
 
     <h2>Lisäkuva</h2>
-    <img src="kuva2.JPG" alt="Peräkärry eri kulmasta" class="kuva" />
+    <img src="kuva2.jpg" alt="Peräkärry eri kulmasta" class="kuva" />
+
+    <h2>QR-koodi sivustolle</h2>
+    <p>Skannaa koodi päästäksesi suoraan varaussivulle:</p>
+    <img src="qr.png" alt="QR-koodi" class="qr" />
 
     <h2>Vuokraehdot</h2>
     <p class="huom">Vuokraaja on vastuussa mahdollisista peräkärryyn kohdistuvista vaurioista vuokrauksen aikana, kuten esimerkiksi renkaan puhkeamisesta tai muista vahingoista.</p>
