@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peräkärryn vuokraus Pirkkalassa</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header, footer {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+    }
+    h1, h2 {
+      color: #444;
+    }
+    .kuva {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.75rem;
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Peräkärryn vuokraus Pirkkalassa</h1>
+  </header>
+  <main>
+    <img src="kuva.jpg" alt="Peräkärry" class="kuva" />
+
+    <h2>Tiedot</h2>
+    <p><strong>Muuli 900K</strong> – kestävä ja tilava peräkärry. Soveltuu mm. huonekalu- ja rakennustarvikekuljetuksiin.</p>
+    <ul>
+      <li>Sisämitat: 145 cm x 320 cm</li>
+      <li>Kippitoiminto</li>
+      <li>Valoliitin: 7-napainen</li>
+      <li>Adapteri 13-napaiselle saatavilla (5 €)</li>
+    </ul>
+
+    <h2>Hinnasto</h2>
+    <ul>
+      <li>1 vrk: 30 €</li>
+      <li>Viikonloppu (pe–su): 50 €</li>
+      <li>Viikko: 120 €</li>
+      <li>13-napainen adapteri: 5 €</li>
+    </ul>
+
+    <h2>Sijainti</h2>
+    <p>Pirkkala – Huovin alue</p>
+
+    <h2>Yhteystiedot</h2>
+    <p>Email: <a href="mailto:santerisarkola00@gmail.com">santerisarkola00@gmail.com</a><br>
+    Puhelin: <a href="tel:+358452345988">+358 45 2345 988</a></p>
+
+    <h2>Varauslomake</h2>
+    <form action="https://formsubmit.co/santerisarkola00@gmail.com" method="POST">
+      <input type="text" name="Nimi" placeholder="Nimi" required>
+      <input type="email" name="Sähköposti" placeholder="Sähköposti" required>
+      <input type="tel" name="Puhelin" placeholder="Puhelinnumero" required>
+      <textarea name="Viesti" rows="5" placeholder="Toivottu vuokrausaika ja lisätiedot" required></textarea>
+      <button type="submit">Lähetä varauspyyntö</button>
+    </form>
+
+    <h2>Maksutavat</h2>
+    <p>MobilePay, käteinen tai lasku</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Peräkärryn vuokraus Pirkkalassa</p>
+  </footer>
+</body>
+</html>
+  
